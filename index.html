@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Summit Ridge Outfitters outdoor gear and adventure guides" />
+    <title>Summit Ridge Outfitters</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a class="logo" href="#home">
+          <span class="logo__mark">▲</span>
+          <span><strong>Summit Ridge</strong><small>Outfitters · Est. 1998</small></span>
+        </a>
+        <button class="menu-button" id="menuButton" aria-label="Open navigation">☰</button>
+        <nav class="nav" id="mainNav">
+          <a href="#shop">Shop</a>
+          <a href="#guides">Adventure Guides</a>
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact</a>
+          <a href="#login" id="loginLink">Login</a>
+          <button class="cart-button feedback-button" id="cartButton" data-message="Your shopping bag is currently empty." aria-label="Shopping bag">Bag <span id="bagCount">0</span></button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="app"></main>
+
+    <footer class="footer">
+      <div class="footer__grid">
+        <div>
+          <a class="logo logo--footer" href="#home">
+            <span class="logo__mark">▲</span>
+            <span><strong>Summit Ridge</strong><small>Outfitters</small></span>
+          </a>
+          <p>Colorado's most trusted outdoor outfitter since 1998. Expert gear, expert advice, real adventures.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <a href="#home">Home</a>
+          <a href="#shop">Shop All Gear</a>
+          <a href="#guides">Adventure Guides</a>
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>4821 Trailhead Blvd<br />Boulder, CO 80301</p>
+          <p>(303) 555-0182<br />hello@summitridge.com</p>
+        </div>
+        <div>
+          <h3>Store Hours</h3>
+          <p>Mon–Fri: 8am–8pm<br />Saturday: 7am–9pm<br />Sunday: 9am–6pm</p>
+          <span class="open">Open Now</span>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Summit Ridge Outfitters, LLC. All rights reserved.</span>
+        <span>Privacy Policy · Terms of Service · Returns & Exchanges</span>
+      </div>
+    </footer>
+
+    <div id="toastContainer"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

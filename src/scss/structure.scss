@@ -1,0 +1,78 @@
+$green: #1b4332;
+$dark: #111d15;
+$orange: #e8722a;
+$gold: #ffb900;
+$soft: #f4f5f0;
+$gray: #666666;
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  min-height: 100%;
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+  color: $dark;
+  background: #fff;
+}
+
+h1, h2, h3 { font-family: Archivo, Arial, sans-serif; }
+h1 { font-size: 56px; line-height: 1; }
+h2 { margin-bottom: 28px; font-size: 38px; line-height: 1.1; }
+h3 { margin-bottom: 10px; }
+p { margin-bottom: 16px; line-height: 1.65; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+
+.wrap { width: min(1180px, calc(100% - 80px)); margin: 0 auto; }
+.section { padding: 88px 0; }
+.section--soft { background: $soft; }
+.center { margin-top: 38px; text-align: center; }
+
+.eyebrow {
+  margin-bottom: 10px;
+  color: $orange;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.eyebrow--light { color: #ffb780; }
+
+.button {
+  display: inline-block;
+  padding: 13px 24px;
+  border: 1px solid $orange;
+  border-radius: 2px;
+  color: #fff;
+  background: $orange;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover { background: #ce5c1c; }
+.button--outline { color: $green; background: transparent; border-color: $green; }
+.button--outline:hover { color: #fff; background: $green; }
+.button--outline-light { background: transparent; border-color: #fff; }
+.button--outline-light:hover { background: rgba(255, 255, 255, .15); }
+.button-row { display: flex; gap: 12px; margin-top: 28px; }
+
+.text-button {
+  padding: 0;
+  border: 0;
+  color: $green;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.open { display: inline-block; padding: 5px 9px; color: $green; background: #d9eadf; font-size: 11px; font-weight: bold; text-transform: uppercase; }

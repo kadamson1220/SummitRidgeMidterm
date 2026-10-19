@@ -1,0 +1,47 @@
+$green: #1b4332;
+$dark: #111d15;
+$orange: #e8722a;
+$soft: #f4f5f0;
+$gray: #666;
+
+.contact-layout { display: grid; grid-template-columns: 1.5fr .8fr; gap: 60px; }
+.form-card { padding: 35px; border: 1px solid #e2e4df; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+form label { display: block; margin-bottom: 18px; font-size: 12px; font-weight: bold; }
+form input, form select, form textarea { width: 100%; margin-top: 7px; padding: 13px; border: 1px solid #cbd0cb; border-radius: 0; color: $dark; background: #fff; }
+form input:focus, form select:focus, form textarea:focus { outline: 2px solid rgba(232,114,42,.25); border-color: $orange; }
+form textarea { min-height: 150px; resize: vertical; }
+.contact-info { padding: 30px; background: $soft; }
+.contact-info h2 { font-size: 25px; }
+.contact-info h3 { margin-top: 28px; }
+.contact-info p { color: $gray; }
+.map { height: 160px; margin-top: 28px; padding: 20px; display: flex; flex-direction: column; justify-content: flex-end; color: #fff; background: linear-gradient(rgba(17,29,21,.2),rgba(17,29,21,.75)), url("../../images/mountains.jpg") center/cover; }
+.map small { margin-top: 4px; }
+.faq { max-width: 850px; }
+.faq details { padding: 20px 0; border-bottom: 1px solid #d7dad5; }
+.faq summary { font-family: Archivo, sans-serif; font-weight: bold; cursor: pointer; }
+.faq details p { padding-top: 15px; color: $gray; }
+
+.auth-page { min-height: 720px; padding: 65px 40px; display: grid; place-items: center; background: $soft; }
+.auth-card { width: min(1050px,100%); display: grid; grid-template-columns: 1fr 1fr; background: #fff; box-shadow: 0 14px 45px rgba(17,29,21,.12); }
+.auth-card__form { padding: 55px; }
+.auth-card__form h1 { margin-bottom: 18px; font-size: 39px; }
+.auth-card__form > p:not(.eyebrow,.auth-link) { color: $gray; }
+.auth-card__form form { margin-top: 28px; }
+.auth-card__form .button { width: 100%; margin-top: 5px; }
+.auth-link { margin: 22px 0 0; text-align: center; color: $gray; font-size: 13px; }
+.auth-link a { color: $orange; font-weight: bold; }
+.auth-card__image { position: relative; min-height: 570px; color: #fff; overflow: hidden; }
+.auth-card__image::after { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent,rgba(17,29,21,.78)); }
+.auth-card__image img { width: 100%; height: 100%; object-fit: cover; }
+.auth-card__image > div { position: absolute; z-index: 2; right: 35px; bottom: 35px; left: 35px; }
+.auth-card__image h2 { margin: 0; }
+
+#toastContainer { position: fixed; top: 90px; right: 22px; z-index: 100; display: flex; flex-direction: column; gap: 10px; }
+.toast { width: min(360px,calc(100vw - 44px)); padding: 15px 18px; border-left: 5px solid $orange; color: #fff; background: rgba(17,29,21,.97); box-shadow: 0 8px 25px rgba(0,0,0,.22); font-size: 13px; animation: toastIn .35s ease; }
+.toast--success { border-left-color: #65b87a; }
+.toast--error { border-left-color: #ef6b61; }
+.toast--info { border-left-color: #ffb900; }
+.toast--hide { animation: toastOut .4s ease forwards; }
+@keyframes toastIn { from { opacity: 0; transform: translateY(-12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes toastOut { to { opacity: 0; transform: translateY(-12px); } }
